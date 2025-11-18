@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color:chartreuse;
+    font-size:50px;
+    
+}
+img {
+    height:300px;
+}
+h2 {
+    margin-left: 50px;
+}
+ul {
+    margin-left: 50px;
+}
