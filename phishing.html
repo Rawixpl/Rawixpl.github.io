@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phishing</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #0d1117;
+                color: #c9d1d9;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                padding: 40px 20px;
+            }
+
+            .main-container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .powrot-header {
+                position: relative;
+                text-align: center;
+                margin-bottom: 30px;
+                padding: 10px 0;
+            }
+
+            .przycisk-powrotu {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: inline-block;
+                padding: 8px 20px;
+                background-color: #21262d;
+                border: 1px solid #30363d;
+                color: #58a6ff;
+                text-decoration: none;
+                font-size: 0.95rem;
+                font-weight: bold;
+                border-radius: 6px;
+                transition: background-color 0.2s, color 0.2s;
+            }
+
+            .przycisk-powrotu:hover {
+                background-color: #30363d;
+                color: #f0f6fc;
+            }
+
+            h1.tytul {
+                color: #58a6ff; 
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+
+            h2 {
+                color: #58a6ff;
+                font-size: 1.6rem;
+                margin: 40px 0 20px 0;
+                border-bottom: 2px solid #21262d;
+                padding-bottom: 8px;
+            }
+
+            h3 {
+                color: #f0f6fc;
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 25px;
+                color: #8b949e;
+            }
+
+            p strong {
+                color: #ff7b72;
+            }
+
+            .sekcja-info {
+                background-color: #161b22;
+                border: 1px solid #30363d;
+                border-left: 5px solid #58a6ff;
+                padding: 25px;
+                margin: 30px 0;
+                border-radius: 6px;
+            }
+
+            .sekcja-info h4 {
+                color: #f0f6fc;
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+
+            .tekst-rozwiniety strong {
+                color: #58a6ff;
+                display: block;
+                margin-top: 15px;
+            }
+            .tekst-rozwiniety strong:first-child {
+                margin-top: 0;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 30px;
+            }
+
+            ul li {
+                margin-bottom: 12px;
+            }
+
+            ul li a {
+                display: block;
+                background-color: #161b22;
+                border: 1px solid #30363d;
+                padding: 15px;
+                border-radius: 6px;
+                color: #c9d1d9;
+                text-decoration: none;
+                transition: background-color 0.2s;
+            }
+
+            ul li a:hover {
+                background-color: #1f242c;
+                color: #58a6ff;
+            }
+
+            .video-wrapper {
+                max-width: 450px;
+                margin: 15px 0 0 0;
+                border-radius: 6px;
+                overflow: hidden;
+                border: 1px solid #30363d;
+            }
+
+            .video-wrapper iframe {
+                display: block;
+                width: 100%;
+                height: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+            
+            <div class="powrot-header">
+                <a href="index.html" class="przycisk-powrotu">← Powrót</a>
+                <h1 class="tytul">Phishing</h1>
+            </div>
+            
+            <h3>Czym jest phishing?</h3>
+            <p><strong>Phishing</strong> to metoda cyberprzestępczości, w której oszuści podszywają się pod zaufane instytucje (np. banki, urzędy, kurierów) lub osoby, aby wyłudzić poufne informacje. Najczęściej wyłudzają hasła, numery kart płatniczych czy dane logowania poprzez fałszywe strony internetowe.</p>
+
+            <div class="sekcja-info">
+                <h4>Najczęstsze metody ataków</h4>
+                <div class="tekst-rozwiniety">
+                    <strong>E-mail:</strong> Wiadomości nakłaniające do kliknięcia w link i "pilnego zalogowania się" na spreparowaną stronę.<br>
+                    <strong>SMiShing:</strong> Wiadomości SMS z informacją o niedopłacie (np. za paczkę czy rachunek za prąd) z linkiem do fałszywego systemu płatności.<br>
+                    <strong>Vishing:</strong> Oszustwa telefoniczne, w których dzwoniący podaje się np. za pracownika banku i próbuje nakłonić ofiarę do przelania środków na „bezpieczne konto”.
+                </div>
+            </div>
+
+            <h2>Ciekawy film</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/icar63NcxQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <h2>Ciekawe artykuły</h2>
+            <ul>
+                <li><a href="https://blog.theprotocol.it/slownik-it/phishing" target="_blank">TheProtocol – Co to jest phishing?</a></li>
+                <li><a href="https://pl.wikipedia.org/wiki/Phishing" target="_blank">Wikipedia – Phishing</a></li>
+                <li><a href="https://www.mbank.pl/lp2/2025/w1/samoobronawsieci-2/" target="_blank">mBank – Kurs samoobrony przed phishingiem</a></li>
+            </ul>
+            
+        </div>
+    </body>
+</html>
